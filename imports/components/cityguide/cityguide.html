@@ -1,0 +1,138 @@
+<!--<div>
+	<h2>My Orders</h2>
+	<p>
+		<table border="1" width="100%">
+			<tr>
+				<th>Sales Order ID</th>
+				<th>Total Amount</th>
+				<th>Payment Mode</th>
+				<th>Date</th>
+				<th>Request Delivery</th>
+			</tr>
+			<tr ng-repeat="salesOrder in $ctrl.salesOrders">
+				<td>{{salesOrder._id}}</td>
+				<td>{{salesOrder.totalAmount | currency}}</td>
+				<td>{{salesOrder.paymentMode}}</td>
+				<td>{{salesOrder.createdAt | date:dd/MM/yyyy}}</td>
+				<td><button ng-click="$ctrl.requestDelivery(salesOrder)">Request</button></td>
+			</tr>
+		</table>
+	</p>
+</div>
+-->
+
+<div style="background-image:url('images/completed2.jpg');height: 1000px">
+  <title>i~search</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <table width="80%" align="center">
+	<tr>
+	  <td width="30%" align="right"><img src="images/logo.png"></td>
+	   <td align="center"><input type="text" ng-model="$ctrl.search_info" style="width:400px;height:30px">&nbsp;<button ng-click="$ctrl.searchgo()" class="btn-info btn-lg"><span class="glyphicon glyphicon-search"> Search</button></span></td>
+  </table>
+  <br>
+  <table width="80%" style="color:white;font-family:Times New Roman;background-color:orange" align="center">
+    <tr>
+		<font size="6">
+		  <td><font size="6">&nbsp;&nbsp;</font></td>
+		  <td><font size="6"><a href="\home">Home</a></font></td>
+		  <td><font size="6"><u>City Guide</u></font></td>
+		  <td><font size="6"><a href="\notfinish">Scenic Spot</a></font></td>
+		  <td><font size="6"><a href="\food">Food</a></font></td>
+		  <td><font size="6"><a href="\notfinish">Hotel</font></a></td>
+		  <td><font size="6"><a href="\notfinish">Shopping</font></a></td>
+		</font>
+		</tr>
+	  </table>
+	  <table width="80%" align="center">
+    <tr>
+	  <td rowspan="2" width="10%"><font size="5" color="#blue">Singapore</font></td>
+	  <td width="10%">Garden</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td width="10%">City</td>
+	  <td></td>
+	</tr>
+  </table>
+  <br/><br/>
+   <div id="demo" rowspan="15" style="position:absolute;left: 33%;top:30%;margin-right: 10%">
+ 	  	<i style="text-align:center;font-size:40px" align="center">Welcome to Singapore.</i>
+   </div>
+  <table style="margin-left:10%;width:300px;height: 200px" >
+    <tr>
+	   <td colspan="2" style="text-align:left"><big><b>Brief Introduction</b></big></td> 
+  </tr>
+	<tr>
+	  <td style="text-align:center"><a href="#!" onclick="text1()">Tips</a></td>
+	  <td style="text-align:center"><a href="#!" onclick="text2()">Entertainment</a></td>
+	</tr>
+	<tr>
+	  <td style="text-align:center"><a href="#!" onclick="text3()">Customs and Taboos</a></td>
+	  <td style="text-align:center"><a href="#!" onclick="text4()">Best Travel Time</a></td>
+	</tr>
+    <tr>
+	   <td colspan="2" style="text-align:left"><big><b>Travel Guide</b></big></td> 
+ 	</tr>
+	<tr>
+	  <td style="text-align:center"><a href="#!" onclick="text5()">Arrival</a></td>
+	  <td style="text-align:center"><a href="#!" onclick="text6()">Trip</a></td>
+	</tr>
+	<tr>
+	  <td style="text-align:center"><a href="#!" onclick="text7()">Accomodation Guide</a></td>
+	  <td style="text-align:center"><a href="#!" onclick="text8()">Traffic</a></td>
+	</tr>
+    <tr>
+	   <td colspan="2" style="text-align:left"><big><b>Additional Information</b></big></td> 
+ 	</tr>
+	<tr>
+	  <td style="text-align:center"><a href="#!" onclick="text9()">Weather</a></td>
+	  <td style="text-align:center"><a href="#!" onclick="text10()">Network</a></td>
+	</tr>
+	<tr>
+	  <td style="text-align:center"><a href="#!" onclick="text11()">SOS</a></td>
+	  <td style="text-align:center"><a href="#!" onclick="text12()">Oral English</a></td>
+	</tr>
+  </table>
+  <br><br><br><br>
+  <p style="position: absolute;left:35%;top: 120%;">©2017-2017 i-search.com, All Rights Reserved.  本站发布的所有内容，未经许可，不得转载.</p>
+</div>
+
+<script type="text/javascript">
+     function text1(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;The old Singapore called Singapore, Singapore or Tao, called the lion city, is an island nation in Southeast asia. And an island is a city, Singapore is also a beautiful and prosperous garden city. The Merlion, the bitch, the durian, the ten thousand...... Diverse cultures, diverse languages, and diverse landscapes make up this small and beautiful city, making it a holiday resort in Southeast asia.<br/><br/>&nbsp;&nbsp;Singapore is located in the southern tip of the Malay Peninsula, adjacent to the south of the Malacca Strait, the south of the Straits of Singapore and Indonesia across the north of the Johore Strait and adjacent to Malaysia, and to the causeway and the second channel bridge is connected between the two sides in malaysia. In addition to the island of Singapore, also including a few around the island, such as Jurong Island, Deguang Island, Pulau Ubin and Sentosa. As the reclamation project forms new land areas, additional 50 sq km of land will be expected to be added by 2030.<br/><br/>&nbsp;&nbsp;Singapore is a multicultural country. Historically, immigrants from across Asia and Europe have brought their respective traditional cultures here, and ethnic exchanges and integration have left a rich cultural identity. Can feel the different culture in the Little India, China Town, Arabia street blocks, and widely used in various languages and words, all over the year, China Muslims, India and the Christian festival event is also fully reflects the diversity of Singapore culture. Among them, the most worthy of mentioning is the 'mother provoke culture'. Nonya ethnic group is China immigrants and Malays born hundreds of years ago a man called descendants of Baba, woman called nonya. This kind of culture is the fusion of Chinese traditional custom and Malay cultural custom. It is reflected in all aspects of clothing, architecture, food and so on. It is a special experience that can not be missed during the journey<br/><br/>&nbsp;&nbsp;Singapore is located in the East eight district, and the same time in Beijing.";
+     } 
+     function text2(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Singapore cuisine is mainly based in South China, Malay, India and maternal cuisine. One of the most distinctive is China and Malay food culture and the combination Shuangjian Nonya, but can not taste the dishes include Curry Coconut Sauce toast, chilli crab, fish head curry, Chicken Rice, Hainan Style, Bak-Kut-The and laksa. The restaurant around the island, if you want to eat all kinds of food in different culture time, then went to Lau Pa Sat, Mai Shiwei center and other outdoor road delicacy food center.<br/><br/>&nbsp;&nbsp;Singapore is suitable for all kinds of travel. There are a variety of museums, galleries and Cultural Center for art lovers to visit Sentosa beach and Pulau Ubin, a tropical rainforest for nature lovers to explore, with Universal Studios, the night zoo and cruise and sightseeing bus for family travel fun, Seaside Resort, Marina Bay, Singapore riverside for the lovers are close, Clarke Quay upscale restaurants throughout the city, the stall and bank for sisterhood, brothers nightclub carnival, F1 events, Sentosa Golf and beach volleyball, surfing and other sports for people to enjoy the love, as well as Little India and China Town neighborhood characteristics for travelers travel alone. The day visiting the attractions, eat delicacy, Amoy good heart, at night to drink a cup of wine, dance, can also go to the wild animal and intimate contact, for 24 hours or even can not stop recreation will let you forget the tired, become a vibrant holiday.<br/><br/>&nbsp;&nbsp;Singapore is a good place for shopping, shopping malls, shops, shopping streets are everywhere, such as ION Orchard and Ngee Ann City, Fengcheng Yi (VivoCity), every mall provides a different shopping experience. 5-7 months and Christmas after the hot sale will not be missed. Orchard Road is the most famous shopping area, with the latest trend goods. Kampong glam, Little India and China town to buy more cultural goods, all kinds of cultural products, jewelry, textiles, such as a collection of antiques. Computer and electronic products can be found in the forest square or Funan Digital Plaza.";
+     } 
+     function text3(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Singapore is a clean and tidy multi-ethnic city, which pays great attention to environmental protection and ethnic respect. It may offend local people or even impose high fines.<br/><br/>&nbsp;&nbsp;Respect the customs of Islam: take off your shoes when entering a mosque; try not to eat pork in front of Malays; drink alcohol while eating with a Muslim; it is best not to drink alcohol.<br/><br/>&nbsp;&nbsp;No smoking: smoking is prohibited in the subway, MRT, public buses, taxis and elevators, except for places where air conditioners are installed in shopping centres, restaurants, recreational establishments and cinemas. Recently, the government introduced a ban on smoking in public restaurants and in the 5 meter radius of the vast majority of buildings. The only smoking area was clearly defined with bright yellow paint. Smokers who violate the rules for the first time will be fined up to 1 thousand new coins.<br/><br/>&nbsp;&nbsp;No chewing gum: no chewing gum is allowed in Singapore. People who smuggle chewing gum will be sentenced to one year's imprisonment and a fine of up to $10 thousand, but a small number of carriers are not included. Visitors are allowed to take some for themselves.<br/><br/>&nbsp;&nbsp;Gambling is prohibited: in addition to charity lottery, lottery TOTO, Singapore SWEEP and via Bukit Bay Club handled bets on a horse race, any other forms of gambling are banned in singapore. <br/><br/>&nbsp;&nbsp;No durian is allowed to enter the subway or public bus: because of the strong smell, pomegranate in subway and public bus will be fined.<br/><br/>&nbsp;&nbsp;No food is allowed on the subway platform or in the compartment: water and food are prohibited and offenders may be fined.<br/><br/>&nbsp;&nbsp;Attention to environmental hygiene: spitting, littering may be punishable by fines of up to 1000 new coins.<br/><br/>&nbsp;&nbsp;Pedestrians to walk the sidewalk and crosswalk: climb over the fence will be fine, if 50 meters crosswalks, from traffic lights down across the road.";
+     } 
+     function text4(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Singapore all year for tourism, but in the rainy season (November - February) come, should bring rain gear every day.<br/><br/>&nbsp;&nbsp;In April and July, the annual World Gourmet Summit and the Singapore Food Festival are held at this time, the most suitable for tourists who want to eat delicious food.<br/><br/>&nbsp;&nbsp;The climax of June Singapore sale, this is the best time to go to Singapore shopping, guaranteed to make you fruitful.<br/><br/>&nbsp;&nbsp;11-12 - Singapore's tourist season, many people come here to experience tropical christmas. At Orchard Road and the island, the mall will have a Christmas discount is also very suitable for many shopping.";
+     } 
+     function text5(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;China-Singapore<br/><br/>&nbsp;&nbsp;Flying is the best way to get to Singapore from home. Changi International Airport (Changi Airport, SIN, http://www.changiairport.com/) has weekly flights with Beijing, Shanghai, Guangzhou, Xiamen, Hangzhou, Kunming and Chengdu. From the airport to the city, you can take the airport bus, bus, taxi, MRT and so on. Please refer to the airport guide section.<br/><br/>&nbsp;&nbsp;Direct travel to major cities in singapore:<br/><br/>&nbsp;&nbsp;Shanghai - Singapore (Spring Airlines, Orient Airlines, Singapore Airlines) about 5 hours flight<br/><br/>&nbsp;&nbsp;Beijing Singapore (Air China, Singapore Airlines) about 6 hours flight<br/><br/>&nbsp;&nbsp;Guangzhou Singapore (China Southern Airlines, Xiamen airlines, Tiger Airways, Singapore Airlines) about 4 hours of flight<br/><br/>&nbsp;&nbsp;Shenzhen - Singapore (Shenzhen airlines, SilkAir, Tiger Airways, Singapore Airlines) about 4 hours of flight<br/><br/>&nbsp;&nbsp;Hangzhou - (Singapore Jetstar, Xiamen airlines, China Southern Airlines flight) about 5-7 hours<br/><br/>&nbsp;&nbsp;Nanjing - Singapore (Singapore Airlines) about 5.5 hours flight<br/><br/>&nbsp;&nbsp;Chengdu Singapore (Air China, Sheng an Airlines, Singapore Airlines) about 5 hours flight<br/><br/>&nbsp;&nbsp;Xiamen - Singapore (Xiamen airlines, Southern Airlines, Sheng an Airlines, Singapore Airlines) about 4 hours flight<br/><br/>&nbsp;&nbsp;Haikou, Qingdao, Wuxi, Fuzhou, Guiyang, Jieyang, Lijiang, Nanning, Ningbo, Tianjin,, Wuhan, Changsha and Chongqing also have direct flights to Singapore, flying about 5-7 hours or so";
+     } 
+     function text6(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;D1: China town - Amman Hindu temple - Mali Masjid Jamae - btrts - Little India - Vera Makari Ayman - Arabia Hindu Temple Street, Clarke Quay<br/><br/>&nbsp;&nbsp;The morning to go to China town to eat a breakfast of toast with coconut sauce authentic coffee coffee, then stroll along the street feel the overseas Chinese culture, visit Mali Amman Hindu temple, Masjid Jamae and btrts. Then go to Little India to eat a meal tea with curry scones and India dishes, along Longgang Road shopping store, visit the Vera Makari Ayman Hindu temple. If you are interested, can also like the Indians painted a beautiful pattern on the body with henna pigment. Not far away is Arabia street, the streets are souvenir shops and restaurants, to experience a distinct and unique foreign culture. In the evening, I came to the Clarke Quay on the Singapore River. I ordered a Chili Crab at the Riverside Restaurant. I watched the night view while eating. You can walk along the river at night or you can find a bar for a drink<br/><br/>&nbsp;&nbsp;D2: Sentosa Island - Universal Studios - West Coast Beach - the world of entertainment spots - underwater world - Merlion tower - song of the sea - Night Zoo<br/><br/>&nbsp;&nbsp;Spend a day in Sentosa Island, enjoy the fun of the island vacation. You can go to Universal Studios to recreation, TLIDEA siloso beach frolic, casino resorts world to gamble, or visit the underwater world and the merlion. In the evening, you can watch a wonderful 'song of the sea' show, or you can stay on the island for one night. If the night to return to Singapore Island, may wish to go to the zoo at night, in the dark night with the moon and stars glow and wild animal close contact.<br/><br/>&nbsp;&nbsp;D3: Orchard Road, National Museum of Singapore, Raffles Hotel - the old Houses of Parliament - Vitoria theatre and music hall - Tum Hotel - Merlion's Park - The Esplanade - Grand Sands Hotel - The Sands Skypark - Helix Bridge - Singapore Flyer<br/><br/>&nbsp;&nbsp;The first morning of the Orchard Road shopping, if you can catch the sale, it is a good time to shopping. There are many food courts and restaurants in every market. It is the best choice to have a mother's food. Then go to the downtown Singapore, National Museum of Singapore to explore the city and country, then stroll along the river, the old way of Raffles Hotel, Houses of Parliament, Vitoria theatre and music hall, splendid Tum Hotel, arrived at the Marina Bay, Merlion's Park, The Esplanade, near the Sands Hotel and Jinsha Garden is also worth a look. Night, through the spiral bridge, to take the Singapore Ferris wheel, to enjoy the beautiful night scenery.";
+     } 
+     function text7(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Although Singapore area is small, but a lot of high-end, mid-range, Econo Hotel, guesthouse, land structure is the accommodation prices in Southeast Asia Top globally is very expensive. Usually, the upscale hotel for the price of $400 per night, mid-range is about 200 of the new currency, the economy is $more than 100, and the basic pension remained at about 50 of new money every night. Around the new year, the 5-7 month of the hot season, the shopping season and the September F1 competition, the price is even higher, and there will be no room early, you must book in advance. Singapore riverside, Binhai District and Orchard Road is the upscale hotel focus, China Town, Little India, Geylang is also convenient sightseeing and cultural experience of the accommodation options, these blocks have a lot of Econo Hotel and guesthouse.<br/><br/>&nbsp;&nbsp;Marina Bay: luxury hotel offers the most comfortable enjoyment. Headed by Marina Bay Sands, there are many luxury hotels on the coast, providing the highest quality of service. Leisure, entertainment, food and beverage, shopping places are also very concentrated, and near the attractions, where to go sightseeing is very convenient. The night view of the sea view room is so beautiful that it deserves to be squandered once.<br/><br/>&nbsp;&nbsp;Orchard Road: it's the best place for shopping fans. A large shopping center with high-end luxury hotel, from the room to store only a few steps away. There are a lot of delicious food restaurants along the street, and the transportation to the scenic spots is also convenient.<br/><br/>&nbsp;&nbsp;Geylang: good place Singapore culture experience. Here is the most likely Singapore Longshehunza, colorful area, there are a lot of economic accommodation, and many temples, hall, delicacy, romantic places. But this is the red light district of Singapore. It is recommended that single women do not choose here.<br/><br/>&nbsp;&nbsp;Sentosa: best choice for leisure vacation. The island is one of the most famous resorts in Singapore, with luxury hotels on the beach for your choice. It's ideal for family outings and honeymoon. There are also cheap resorts and campsites on the island.";
+     } 
+     function text8(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;metro<br/><br/>&nbsp;&nbsp;Singapore Subway System (http://www.smrt.com.sg/Home.aspx) is not only one of the world's most clean transportation system, but also let you enjoy the beauty of the city and hinterland areas, but also can get almost any corner of singapore. The first car mostly in 5:30 before and after the last bus at about 24:00. There are altogether four subway lines:What is the - line, the green line subway, Singapore Airport-boon lay;<br/><br/>&nbsp;&nbsp;North South line, the subway line, Jurong East-Marina bay;<br/><br/>&nbsp;&nbsp;- the northeast line, namely the Metro purple line, Punggol-harbor;<br/><br/>&nbsp;&nbsp;- link, namely Metro yellow line, bay-harbor.<br/><br/>&nbsp;&nbsp;Public bus<br/><br/>&nbsp;&nbsp;The public bus is the most convenient way to travel to any corner of the city. The bus hubs are all near the subway station, and the bus and subway transfers are also very impressive. Because of the rainy weather in Singapore every day, all the bus stops are roofed, and there are seats and public telephones<br/><br/>&nbsp;&nbsp;Taxi<br/><br/>&nbsp;&nbsp;Singapore taxi is known locally as 'taxi', can easily hit the taxi in most areas on the road. A lot of Texaco station in Singapore, where most taxi station is located in front of the hotel and shopping malls. Take a taxi in Singapore are according to the meter, taxi from 3-5 is the new currency, starting 1 kilometers, after every 210 meters for 1 corner of the new currency, if the total distance more than 10 kilometers, the excess part is changed to the 1 corners of the new currency every 175 meters. If the taxi is in wait, 1 new coins will be charged every 25 seconds. In the peak hours on weekdays, the city's taxi fare is generally not more than 10 new coins.";
+     } 
+     function text9(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Singapore is hot and humid, with little change throughout the year. The average daytime temperature of 31 degrees C, and at night, the temperature will be reduced to about 24 degrees C. Climate is divided into rainy season and dry season. From November to February of each year, the rainy season will dominate the tropical climate of the island. It rains almost every day and the weather is cool. March to October is dry season, the island will be very hot.<br/><br/>&nbsp;&nbsp;Whenever you go to Singapore, sunscreen is essential. It is recommended to bring high SPF sunscreen and sunglasses. Outdoor wear short sleeved clothes can be, but the indoor air temperature, including the public transportation is usually very low (the locals joke that it was to experience the summer outside temperature), suggest taking a long sleeved clothes to prevent the temperature change is too big and cold. Trousers, long skirts are also necessary. Beach walks and entrance to religious sites are required. Flip flops are best for a beach trip, but look out for fancy restaurants and formal occasions. Sunny umbrella is also necessary, the dry season can shade, rainy season can block the rain. Singapore is a small place for walking, and a good pair of shoes can make your trip more comfortable.";
+     } 
+     function text10(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Telephone<br/><br/>&nbsp;&nbsp;There are three major telecom companies in Singapore: Starhub (star and), Singtel (New Telecom) and Mobile One (M1). Three operators have their own SIM card sale, usually 3G card, with a certain amount of Internet traffic, free SMS and call time (different operators have different preferential items). Among them, Singapore Telecom (Singtel) the largest number of users, the signal better. In Singapore, post offices, 7-11 convenience stores and telephone card agents sell phone cards of various denominations. Remember to bring your passport, Singapore's mobile phone card is the real name system. The international code for Singapore is 65.<br/><br/>&nbsp;&nbsp;Network<br/><br/>&nbsp;&nbsp;In addition to some hotels or coffee shops, there is no free Wi Fi in public places, and most hotels have wireless networks. If you buy Singapore local mobile phone number, the Internet can open wireless@sg account (either operators can be opened at login.icellwireless.net/regterms.html, myad1.singnet.com.sg, wsg.m1net.com.sg/wTerms.aspx), in many shopping malls and public areas will be online for free. At Singapore Airport, travelers can go to the reception desk for 4 hours of free wireless@sg temporary accounts.<br/><br/>&nbsp;&nbsp;";
+     } 
+     function text11(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Call<br/><br/>&nbsp;&nbsp;Fire alarm, ambulance: 995<br/><br/>&nbsp;&nbsp;Police station: 999<br/><br/>&nbsp;&nbsp;Immigration and customs bureau hotline: (65) 63916100 (twenty-four hour telephone hotline service staff serving Monday to Friday, 8:00-a.m.,5:00 p.m., Saturday, 8:00- a.m., 1:00 p.m.) <br/><br/>&nbsp;&nbsp;Singapore Tourist Board passenger hotline: 18007362000 (Singapore free domestic service hours: Monday to Friday, 8:30- a.m., 9:30 p.m., Saturday, 8:30- a.m., 10:00 p.m., Sunday, 11:00- a.m., 10:00 p.m.)";
+     } 
+     function text12(){
+     	document.getElementById("demo").innerHTML="&nbsp;&nbsp;Colloquial English<br/><br/>&nbsp;&nbsp;Chinese Singaporeans make up the majority of the population. They travel locally and use Chinese almost unimpeded. But knowing the unique Singapore English (Singlish) will also add pleasure to your journey. Singapore is a unique blend of English, English, Malay, Tamil and Chinese local dialect and, although full of grammatical mistakes, but clearly shows the characteristics of diversification in Singapore society.<br/><br/>&nbsp;&nbsp";
+     } 
+</script>

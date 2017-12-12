@@ -1,0 +1,73 @@
+<div style="background-image:url('./images/worldmap.jpg'); height:1000px;background-repeat: no-repeat;background-size: 100%;"> 
+  <h1 style="text-align:center"><big><big>Welcome to I-Search.com</big></big></h1>
+  <h2 style="text-align:center">Choose the city,please.</h2>
+  <p>
+    <table style="height: 600px;width: 100%">
+      <tr>
+        <td><big><big>Asian Cities</big></big></td>
+        <td ng-repeat="x1 in $ctrl.asianCities">
+          <a href="/notfinish"><u><i><big>{{x1}}</big></i></u></a>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td ng-repeat="x9 in $ctrl.asianCities2">
+          <a href="/notfinish"><u><i><big>{{x9}}</big></i></u></a>
+        </td>
+        <td><a href="/home"><u><i><big>Singapore</big></i></u></a></td>
+        <td ng-repeat="x11 in $ctrl.asianCities3">
+          <a href="/notfinish"><u><i><big>{{x11}}</big></i></u></a>
+         </td>
+      </tr>
+        <tr>
+        <td><big><big>European Cities</big></big></td>
+        <td ng-repeat="x2 in $ctrl.europeanCities1">
+          <a href="/notfinish"><u><i><big>{{x2}}</big></i></u></a>
+          </td>
+      </tr>
+        <tr>
+        <td></td>
+        <td ng-repeat="x3 in $ctrl.europeanCities2">
+          <a href="/notfinish"><u><i><big>{{x3}}</big></i></u></a>
+          </td>
+      </tr>
+        <tr>
+        <td></td>
+        <td ng-repeat="x10 in $ctrl.europeanCities3">
+          <a href="/notfinish"><u><i><big>{{x10}}</big></i></u></a>
+          </td>
+      </tr>
+        <tr>
+        <td><big><big>African Cities</big></big></td>
+        <td ng-repeat="x4 in $ctrl.africanCities">
+          <a href="/notfinish"><u><i><big>{{x4}}</big></i></u></a>
+          </td>
+      </tr>
+      <tr>
+        <td><big><big>North American Cities</big></big></td>
+        <td ng-repeat="x5 in $ctrl.northAmericanCities1">
+          <a href="/notfinish"><u><i><big>{{x5}}</big></i></u></a>
+          </td>
+      </tr>
+         <tr>
+        <td></td>
+        <td ng-repeat="x6 in $ctrl.northAmericanCities2">
+          <a href="/notfinish"><u><i><big>{{x6}}</big></i></u></a>
+          </td>
+      </tr>
+        <tr>
+        <td><big><big>South American Cities</big></big></td>
+        <td ng-repeat="notfinishx7 in $ctrl.southAmericanCities">
+          <a href="/notfinish"><u><i><big>{{x7}}</big></i></u></a>
+          </td>
+      </tr>
+         <tr>
+        <td><big><big>Oceanian Cities</big></big></td>
+        <td ng-repeat="x8 in $ctrl.oceanianCities">
+          <a href="/notfinish"><u><i><big>{{x8}}</big></i></u></a>
+          </td>
+      </tr>
+    </table>
+  </p>
+</div>
+

@@ -1,0 +1,164 @@
+<!-- 		<p>
+		<table border="1" width="100%">
+			<tr>
+				<th>Brand1</th>
+				<th>Model</th>
+				<th>Unit Price</th>
+				<th>Image</th>
+				<th>Details</th>
+			</tr>			
+			  <tr  style="text-align:center; width=100%;border:1px black solid" > <h1 style="text-align:center">We Buy the Best!</h1></tr>
+			<tr ng-repeat="mp3Player in $ctrl.mp3Players">
+				<td>{{mp3Player.brand}}</td>
+				<td>{{mp3Player.model}}</td>
+				<td>{{mp3Player.unitPrice}}</td>
+				<td><img src="./images/{{mp3Player.skuCode}}_1.jpg" /></td>
+				<td><button ng-click="$ctrl.viewDetails(mp3Player.skuCode)">View</button></td>
+			</tr>			
+		</table>
+	</p> 
+ -->
+<style>
+    #partOne {
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        width: 30%;
+        height: 305px;
+        overflow: hidden;
+        font-size: 20px;
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    #partTwo {
+        position: absolute;
+        top: 150px;
+        right: 10%;
+        width: 30%;
+    }
+    
+    .define_position_main {
+        position: absolute;
+        top: 100px;
+        width: 50%;
+        left: 25%;
+    }
+    
+    .img_hole {
+        background-size: cover;
+        width: 400px;
+        height: 200px;
+    }
+</style>
+<script type="text/javascript" src="/jwplayer/jwplayer.js"></script>
+<script type="text/javascript">
+    jwplayer("container").setup({
+        sources: [{
+            file: "rtmp://101.132.135.14/myapp/test1"
+        }],
+        image: "bg.jpg",
+        autostart: false,
+        width: 370,
+        height: 330,
+        primary: "flash"
+    });
+</script>
+<script>
+    function ShowDetails() {
+        i = i + 1;
+        var detailOfJieShao = document.getElementById("partOne");
+        if ((i % 2) == 0) {
+            detailOfJieShao.style.overflow = 'scroll';
+        } else {
+            detailOfJieShao.style.overflow = 'hidden';
+        }
+    };
+
+    function AboutUs() {
+        document.getElementById("partOne").innerHTML = "本产品的价值主张为方便的解决方案，与传统指纹锁不同的多组合、创新性的操作方式为用户的家庭财产安全提供一个强有力的保障，减少用户使用时的不便和隐患。客户选择则定位于赢利型客户，通过将本产品销售给越来越多的客户来达到盈利的目的。价值内容体现在功能价值和体验价值，即智能门锁的安全性功能和其使用过程中为用户带来的良好的便捷、灵活、安全性好等体验。";
+    }
+
+    function Back() {
+        window.location.reload();
+    }
+</script>
+<div id="start">
+    <div id="partOne">
+        <a onclick="ShowDetails()" alt="点击查看完整版">
+            <p style="text-align:center;font-size: 20px;margin: 10px;">介绍：</p>
+        </a>
+        <div style="font-size: 15px;">物联网是新一代信息技术的重要组成部分，也是“信息化”时代的重要发展阶段，而智能家居正是在互联网影响之下物联化的体现。目前在我国，智能家居还属于一个新兴的产业，正处于导入期和成长期的临界点，市场消费观念还没有形成，没有培养出相应的消费群体，但随着物联网的概念越来越深入人心，智能家居市场推广普及的进一步落实，消费者的使用习惯逐渐被培育起来，智能家居市场的消费潜力必然是巨大的，产业前景十分光明。 信息家电是智能家居的一个重要标志。信息家电由嵌入式处理器、相关支撑硬件（如显示卡、存储介质、IC卡或信用卡等读取设备）、嵌入式操作系统以及应用层的软件包组成。信息家电的优点在于，它将PC的某些功能单独分解出来，设计成灵活性更高、应用性更强的家电化产品，致力于给人们带来更加便捷和智能化的生活方式，是一种具备高性能、低价格、易操作特点的lnternet工具。从全球来看，谷歌、苹果、微软、三星、华为、小米、魅族等众多科技公司入局智能家居产业，在其努力之下，行业前景看好。2011-2020年，国内智能家居产业进入融合演变期，各大厂商已开始密集布局智能家居（见图1），根据中国报告大厅发布的《2016－2021年中国智能家居行业发展分析及投资潜力研究报告》，据测算，我国智能家居潜在市场规模约为
+            5.8万亿元，2018年我国智能家居市场总规模有望达到225万亿元，发展空间巨大。
+        </div>
+    </div>
+    <div id="partTwo">
+        <b>Play</b>
+        <br/>
+        <script type="text/javascript" src="/jwplayer/jwplayer.js"></script>
+
+        <div id="container">Loading the player ...</div>
+
+    </div>
+
+</div>
+
+<!--
+<div class="define_position_main" >
+		
+
+		<div>
+				<div class="row" >
+						  <div  class="col-sm-6 col-md-6"  ng-mouseover="$ctrl.changeImage(1)">
+						    <div id="woman_glass1" class="thumbnail">
+						      <img class="img_hole" src="/images/homewoman2.jpg" alt="...">
+						      <div class="caption" align="center">
+						        <p><a href="/woman"  class="btn btn-primary" role="button">Woman</a></p>
+						      </div>
+						    </div>
+						  </div>
+
+
+						  <div class="col-sm-6 col-md-6"  ng-mouseover="$ctrl.changeImage(2)">
+						    <div id="woman_glass2" class="thumbnail">
+						      <img src="/images/clothing6.jpg" alt="...">
+						      <div  class="caption" align="center">
+						        <p><a href="/man" class="btn btn-primary" role="button">Man</a> </p>
+						      </div>
+						    </div>
+						  </div>
+
+                 </div>
+           <div>
+						  <div class="col-sm-6 col-md-6" ng-mouseover="$ctrl.changeImage(3)">
+						    <div id="woman_glass3" class="thumbnail">
+						      <img src="./images/homechildren.jpg" alt="...">
+						      <div class="caption" align="center">
+						        <p><a href="/children" class="btn btn-primary" role="button">Children</a></p>
+						      </div>
+						    </div>
+						  </div>
+
+
+						  <div class="col-sm-6 col-md-6" ng-mouseover="$ctrl.changeImage(4)">
+						    <div id="woman_glass4" class="thumbnail">
+						      <img src="./images/homeelder.jpg" alt="...">
+						      <div class="caption" align="center">
+
+						        <p><a href="/elders" class="btn btn-primary" role="button">Elders</a> </p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+</div>
+
+</div>
+
+
+ 	<div id="last">
+		<p id="last-p"> 
+			<a href="/productCatalogue">Home</a> | 
+			<a href="#!/shoppingCart" target="_blank" >Shopping Cart</a> |
+			<a href="/myOrders">My Orders</a>
+		</p> 
+	</div>	 -->

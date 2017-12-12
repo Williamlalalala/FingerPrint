@@ -1,0 +1,103 @@
+<div style="background-image:url('./images/person.jpg'); height:1000px;background-repeat: no-repeat;background-size: 100%;">
+  <table width="15%" style="margin-left:10%;margin-top: 5%" border="1">
+    <tr>
+	  <td width="28%"><font size="4"><b>My information</b></font></td>
+	</tr>
+	<tr>
+	  <td><button class="button1" style="width: 100%;border:solid 0px;">Fundamental Information</button></td>
+	</tr>
+      <td><button class="button1" style="width: 100%;border:solid 0px;">More information</button></td>
+    </tr>
+    <tr>
+      <td><button class="button1" style="width: 100%;border:solid 0px;">Photo</button></td>
+	</tr>
+	<tr>
+	  <td><button class="button1" style="width: 100%;border:solid 0px;">Account information</button></td>
+    </tr>
+    <tr>
+    <td><button class="button1" style="width: 100%;border:solid 0px;">Web Browsing History</button></td>
+    </tr>
+  </table>
+  <table width="40%" style="position:absolute;left:30%;top:12%;border: 2px solid #DCDCDC;" id="user">
+    <tr>
+	  <td><font size="4"><b>Fundamental Information<b></font></td>
+    </tr>
+    <tr>
+    <td><font size="4"><b>__________________________________________________________________</b></font></td>
+    </tr>
+	<tr>
+	  <td>&nbsp;&nbsp;&nbsp;Name: &nbsp;&nbsp;<input type="txt" name=""></td>
+	</tr>
+      <td>&nbsp;&nbsp;&nbsp;Gender:&nbsp;<input type="radio" name="">male&nbsp;&nbsp;&nbsp;<input type="radio" name="">female</td>
+  </tr>
+  <tr>
+      <td>&nbsp;&nbsp;&nbsp;City:&nbsp;&nbsp;  <div class="dropdown">
+  <button class="dropbtn">Please choose..</button>
+  <div class="dropdown-content">
+    <a href="">Singapore</a>
+    <a href="">BeiJing</a>
+    <a href="">HongKong</a>
+  </div>
+</div></td>
+	</tr>
+	<tr>
+	  <td>&nbsp;&nbsp;&nbsp;self introduction:<br>
+	      &nbsp;&nbsp;&nbsp;<textarea type="txt" name="" style="width:60%;height:120px;"></textarea></td>
+  </tr>
+  <tr>
+	  <td>&nbsp;&nbsp;&nbsp;<button onclick="" style="position:absolute;left:20%">submmit</button></td>
+	</tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  </table>
+</div>
+
+
+
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.button1:hover {
+    background-color: grey;
+}
+</style>

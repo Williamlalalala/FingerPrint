@@ -1,0 +1,99 @@
+<style type="text/css">
+	#filterby{
+		border: 0px;
+		font-size: 20px;
+		background-color: rgba(0,0,0,0);
+	}
+	#one_one{
+		border: 0px;
+		background-color: rgba(0,0,0,0);
+	}
+	#one_two{
+		border: 0px;
+		background-color: rgba(0,0,0,0);
+	}
+	.define_position_main{
+		position: absolute;
+		top: 100px;
+	}
+	.bast_sale{
+		position:absolute;
+		top: 50px;
+		height: 150px;
+		width: 100%;
+		background-color: black;
+		overflow: hidden;
+	}
+	.bast_sale_inner{
+		position: absolute;
+		top: 50px;
+		left: 30%;
+		width: 40%;
+		height: 60px;
+		color: white;
+		font-size: 40px;
+		font-weight: 3px;
+		text-align: center;
+	}
+	.main_div{
+		position: absolute;
+		top: 200px;
+		width: 100%;
+		border: 1px black solid;
+	}
+	.design{
+		height: 180px;
+	}
+	
+/*	.table_color{
+		background-color: white;
+	}*/
+</style>
+
+
+
+	<div class="cards cards-condensed"> 
+			  <div class="col-md-4 col-sm-6 col-lg-3" style="background-color:white">
+			    <a class="card" href="#" ng-click="/designDetails">
+			      <img class="design" src="./images/design1.jpg">
+			      <div class="caption">show details</div>
+			      <div class="card-heading"><strong>dresses</strong></div>
+			     <!--  <div class="card-content text-muted">dresses</div> -->
+
+			       <div class="pull-right text-danger"><button type="button" ng-click="$ctrl.add()">{{$ctrl.like}}'s people like<span class="glyphicon glyphicon-heart"></span></button></div>
+			    </a>
+			  </div>
+			<div class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[1].skuCode)">
+			      <img class="design" src="./images/design2.jpg">
+			    <div class="caption">show details</div>
+			    <div class="card-heading"><strong>dresses</strong></div>
+<!-- 			    <div class="card-content text-muted">dresses</div> -->
+			     <div class="pull-right text-danger"><button type="button" ng-click="$ctrl.add()">{{$ctrl.like}}'s people like<span class="glyphicon glyphicon-heart"></span></button></div>
+			  </a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[2].skuCode)">
+			      <img class="design" src="./images/design3.jpg">
+				      <div class="caption">show details</div>
+				      <div class="card-heading"><strong>dresses</strong></div>
+				 <!--      <div class="card-content text-muted">dresses</div> -->
+				       <div class="pull-right text-danger"><button type="button" ng-click="$ctrl.add()">{{$ctrl.like}}'s people like<span class="glyphicon glyphicon-heart"></span></button></div>
+				    </a>
+				  </div>
+				<div class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[3].skuCode)">
+			      <img class="design" src="./images/design4.jpg">
+				    <div class="caption">show details</div>
+				    <div class="card-heading"><strong>dresses</strong></div>
+	<!--     <div class="card-content text-muted">dresses</div> -->
+				     <div class="pull-right text-danger"><button type="button" ng-click="$ctrl.add()">{{$ctrl.like}}'s people like<span class="glyphicon glyphicon-heart"></span></button></div>
+				  </a>
+				</div>
+	</div>
+<!-- 
+<div class="row">
+	<div class="panel panel-default  panel-profile m-b-0">
+		<div class="panel heading" style=backgroundImage = 'url(/images/clothing5.jpg)';></div>
+	</div>
+</div> -->

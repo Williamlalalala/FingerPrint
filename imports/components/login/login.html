@@ -1,0 +1,28 @@
+<style type="text/css">
+	.center_div{
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		width: 40%;
+		height: 40%;
+		border: 0px;
+	}
+	
+</style>
+<div class="center_div">
+	<!-- <div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div> -->
+	
+	<h2 style="text-align: center;font-size: 20px;">Login</h2>
+	<p>Please login then to glance over our page</p>
+	<p>
+		
+		<h4 ng-show="$ctrl.showLoginErrMsg" style="color: red;float: left;">Invalid login credential</h4>
+		Username: <input  class="form-control" type="text" ng-model="$ctrl.username" />
+		<br/>
+		Password: <input  class="form-control" type="password" ng-model="$ctrl.pwd" />
+		<br/><br/>
+		<button  class="btn btn-default" ng-click="$ctrl.doLogin()">Login</button> <button  class="btn btn-default" ng-click="$ctrl.register()">Register as New Customer</button>
+	</p>
+</div>

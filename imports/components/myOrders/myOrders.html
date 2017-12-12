@@ -1,0 +1,28 @@
+<style>
+	.robot{
+		background-color: white;
+	}
+</style>
+
+
+<div>
+	<h2>My Orders</h2>
+	<p>
+		<table border="1" width="100%">
+			<tr class="robot">
+				<th>Sales Order ID</th>
+				<th>Total Amount</th>
+				<th>Payment Mode</th>
+				<th>Date</th>
+				<th>Request Delivery</th>
+			</tr>
+			<tr class="robot" ng-repeat="salesOrder in $ctrl.salesOrders">
+				<td>{{salesOrder._id}}</td>
+				<td>{{salesOrder.totalAmount | currency}}</td>
+				<td>{{salesOrder.paymentMode}}</td>
+				<td>{{salesOrder.createdAt | date:dd/MM/yyyy}}</td>
+				<td><button ng-click="$ctrl.requestDelivery(salesOrder)">Request</button></td>
+			</tr>
+		</table>
+	</p>
+</div>

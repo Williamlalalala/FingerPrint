@@ -1,0 +1,55 @@
+<div>
+  {{$ctrl.dosearch()}} 
+  <table width="80%" align="center">
+	<tr>
+	  <td width="30%" align="right"><img src="images/logo.png"></td>
+	 <td align="center"><input type="text" ng-model="$ctrl.search_info" style="width:400px;height:30px">&nbsp;<button ng-click="$ctrl.searchgo()" class="btn-info btn-lg"><span class="glyphicon glyphicon-search"> Search</button></span></td>
+  	</table>
+  	<br>
+  	<table width="80%" style="color:white;font-family:Times New Roman;background:orange;" align="center">
+    	<tr height="30px">
+		  <td><font size="6">&nbsp;&nbsp;</font></td>
+		  <td><font size="6"><a href="\home">Home</a></font></td>
+		  <td><font size="6"><a href="\cityguide">City Guide</a></font></td>
+		  <td><font size="6"><a href="\notfinish">Scenic Spot</a></font></td>
+		  <td><font size="6"><u>Food</u></font></td>
+		  <td><font size="6"><a href="\notfinish">Hotel</font></a></td>
+		  <td><font size="6"><a href="\notfinish">Shopping</font></a></td>
+		</tr>
+	</table>
+  	<p>
+      	{{$ctrl.cal()}}	
+		
+		<div style="position: absolute;top: 30%">
+			<img src="images/{{$ctrl.imgid}}.jpg" height="300px" width="120px">
+			<br>
+			advertisement<br>(supported by <br>Yellow Group)
+    	</div>
+
+
+		<table ng-repeat="mp3Player in $ctrl.result" width="100%" style="text-align: left;margin-left: 10%">
+			<tr>
+				<td width="60%">{{mp3Player.name}}</td>
+				<td>Score:{{mp3Player.score}}</td>
+				<td style="margin-left: :40%"rowspan="5"><img src="./images/{{mp3Player.skuCode}}_1.png" /></td>
+			</tr>
+			<tr>
+				<td>Address:{{mp3Player.address}}</td>
+			</tr>
+		    <tr>
+				<td>Tags:{{mp3Player.tags}}</td>
+			    <td>Distance:{{mp3Player.distance}}km</td>
+			</tr>
+			 <tr>
+				<td>Features:{{mp3Player.features}}</td>
+			    <td>Marks:{{mp3Player.mark}}</td>
+			</tr>
+			<tr>	
+				<td>Price:${{mp3Player.price}}</td>
+				<td>Details:<button ng-click="$ctrl.viewDetails(mp3Player.skuCode)">View</button></td>
+			</tr>					
+		    <tr><td><br/><br/></td></tr>
+		</table>
+	</p>
+	<p style="position: absolute;left:35%;top: 120%;">©2017-2017 i-search.com, All Rights Reserved.  本站发布的所有内容，未经许可，不得转载.</p>
+</div>

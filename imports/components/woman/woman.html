@@ -1,0 +1,323 @@
+ <!--<style >
+	#hole{
+		background-image: url('images/clothing4.jpg');
+		position: absolute;
+		top: 48px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+	}
+	#main{
+		position: relative;
+		top: 100px;
+	}
+	#glass1{
+		background: hsla(0,0%,100%,.3);
+		overflow: hidden;
+	}
+	#glass2{
+		background: hsla(0,0%,100%,.3);
+		overflow: hidden;
+	}#glass3{
+		background: hsla(0,0%,100%,.3);
+		overflow: hidden;
+	}#glass4{
+		background: hsla(0,0%,100%,.3);
+		overflow: hidden;
+	}
+	#last{
+		position: relative;
+		top: 80px;
+		color: white;
+		font-size: 20px;
+	}
+</style>-->
+
+
+
+
+<!-- 
+<img src="./images.{{$ctrl.imgid}}.jpg"></img> -->
+
+
+
+<style type="text/css">
+	#filterby{
+		border: 0px;
+		font-size: 20px;
+		background-color: rgba(0,0,0,0);
+	}
+	#one_one{
+		border: 0px;
+		background-color: rgba(0,0,0,0);
+	}
+	#one_two{
+		border: 0px;
+		background-color: rgba(0,0,0,0);
+	}
+	.define_position_main{
+		position: absolute;
+		top: 100px;
+	}
+	.bast_sale{
+		position:absolute;
+		top: 50px;
+		height: 150px;
+		width: 100%;
+		background-image: url("./images/homeman.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.bast_sale_inner{
+		position: absolute;
+		top: 50px;
+		left: 30%;
+		width: 40%;
+		height: 60px;
+		color: white;
+		font-size: 40px;
+		font-weight: 3px;
+		text-align: center;
+	}
+	.main_div{
+		position: absolute;
+		top: 200px;
+		width: 100%;
+		border: 1px black solid;
+	}
+	.big-boss{
+		width:100%;
+	/*	margin: 0 auto;*/
+		border: 0px;
+	}
+	/*.banner{
+		width: 15%;
+		margin: 0;
+		border: 1px black solid;
+	}*/
+
+</style>
+
+	<!-- 	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<div id="filterTitle" >
+				<button type="button" class="btn btn-default" class="dropdown-menu" aria-labelledby="dropdownMenu4">Category</button>
+				<ul >
+                	<li><a href="#">Regular link</a></li>
+  					<li class="disabled"><a href="#">Disabled link</a></li>
+  					<li><a href="#">Another link</a></li>
+				</ul>
+			</div>
+			<div id="filterCategory" >
+				<button class="filterHead">Category</button>
+			</div>
+			<div id="filterTitle" >
+				<button class="filterHead">Color</button>
+			</div>
+			<div id="filterTitle" >
+				<button class="filterHead">Size</button>
+			</div>
+			<div id="category" ></div>
+			<div id="color"></div>
+		</div> -->
+<div class="bast_sale" >
+	<div class="bast_sale_inner">
+		 <p>BEST SALE</p>	
+	</div>
+</div>
+<div class="main_div">
+<div class="define_position_main">
+	<div>
+
+	  	<div class="btn-group" id="one_one" role="group" style="float:left">
+				 <div id="one_two" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				 	<p id="filterby">FILTER BY:</p>
+				 </div>
+	    </div>
+
+	  	<div class="dropdown dropdown-hover" style="float:left">
+				 <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    CATEGORY<span class="caret"></span>
+				 </button>
+
+				 <ul class="dropdown-menu">
+					   <li><a href="#" ng-click="$ctrl.searchfortwo(1)">Shirts</a></li>
+					   <li><a href="#" ng-click="$ctrl.searchfortwo(2)" >Dresses</a></li>
+					   <li><a href="#" ng-click="$ctrl.searchfortwo(3)" >Jeans</a></li>
+					<!--    <li role="separator" class="divider"></li> -->
+				    <li><a href="#" ng-click="$ctrl.searchfortwo(4)" >Jackets</a></li>
+				    <li><a href="#" ng-click="$ctrl.searchfortwo(5)" >Coats</a></li>
+				 </ul>
+	  	</div>
+	    	<div class="dropdown dropdown-hover"style="float:left">
+				 <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   COLOR<span class="caret"></span>
+				 </button>
+
+				 <ul class="dropdown-menu">
+					   <li><a href="#">Black</a></li>
+					   <li><a href="#">White</a></li>
+					   <li><a href="#">Red</a></li>
+					   <li role="separator" class="divider"></li>
+				    <li><a href="#">Pattern</a></li>
+				 </ul>
+	  	</div>
+	    	<div class="dropdown dropdown-hover"style="float:left">
+				 <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    SIZE<span class="caret"></span>
+				 </button>
+
+				 <ul class="dropdown-menu">
+					   <li><a href="#">XS</a></li>
+					   <li><a href="#">M</a></li>
+					   <li><a href="#">L</a></li>
+					   <li><a href="#">XL</a></li>
+					   <li><a href="#">XXL</a></li>
+					   <li><a href="#">XXXL</a></li>
+				 </ul>
+	  	</div>
+	    	<div class="dropdown dropdown-hover"style="float:left">
+				 <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Order By<span class="caret"></span>
+				 </button>
+
+				 <ul class="dropdown-menu">
+					   <li><a href="#">Most Likes</a></li>
+					   <li><a href="#">Latest Arrivals</a></li>
+					   <li><a href="#">Ascending Price</a></li>
+				    <li><a href="#">Descending Price</a></li>
+				 </ul>
+	  	</div>
+
+	</div>
+
+<br><br><br>
+
+
+<div class="big-boss">
+	<div class="cards cards-condensed"> 
+			  <div class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[0].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[0].skuCode}}_1.jpg">
+<!-- 			      <p>{{$ctrl.mp3Players[1].skuCode}}</p> -->
+			      <div class="caption">show details</div>
+			      <div class="card-heading"><strong>jackets</strong></div>
+			      <div class="card-content text-muted">jackets</div>
+			       <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 520's people like</div>
+			    </a>
+			  </div>
+			<div class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[1].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[1].skuCode}}_1.jpg">
+			    <div class="caption">show details</div>
+			    <div class="card-heading"><strong>dresses</strong></div>
+			    <div class="card-content text-muted">dresses</div>
+			     <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 413's people like</div>
+			  </a>
+			</div>
+			<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[2].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[2].skuCode}}_1.jpg">
+				      <div class="caption">show details</div>
+				      <div class="card-heading"><strong>jeans</strong></div>
+				      <div class="card-content text-muted">jeans</div>
+				       <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 421's people like</div>
+				    </a>
+				  </div>
+				<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[3].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[3].skuCode}}_1.jpg">
+				    <div class="caption">show details</div>
+				    <div class="card-heading"><strong>dresses</strong></div>
+				    <div class="card-content text-muted">dresses</div>
+				     <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 330's people like</div>
+				  </a>
+				</div>
+	</div>
+	<div class="cards cards-condensed"> 
+			  <div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[4].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[4].skuCode}}_1.jpg">
+			      <div class="caption">show details</div>
+			      <div class="card-heading"><strong>shirts</strong></div>
+			      <div class="card-content text-muted">shirts</div>
+			       <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 298's people like</div>
+			    </a>
+			  </div>
+			<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[5].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[5].skuCode}}_1.jpg">
+			    <div class="caption">show details</div>
+			    <div class="card-heading"><strong>jeans</strong></div>
+			    <div class="card-content text-muted">jeans</div>
+			     <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 480's people like</div>
+			  </a>
+			</div>
+			<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[6].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[6].skuCode}}_1.jpg">
+				      <div class="caption">show details</div>
+				      <div class="card-heading"><strong>jackets</strong></div>
+				      <div class="card-content text-muted">jackets</div>
+				       <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 473's people like</div>
+				    </a>
+				  </div>
+				<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+				    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[7].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[7].skuCode}}_1.jpg">
+				    <div class="caption">show details</div>
+				    <div class="card-heading"><strong>jeans</strong></div>
+				    <div class="card-content text-muted">jeans</div>
+				     <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 399's people like</div>
+				  </a>
+				</div>
+	</div>
+	<div class="cards cards-condensed"> 
+			  <div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[8].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[8].skuCode}}_1.jpg">"
+			      <div class="caption">show details</div>
+			      <div class="card-heading"><strong>dresses</strong></div>
+			      <div class="card-content text-muted">dresses</div>
+			       <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 482's people like</div>
+			    </a>
+			  </div>
+			<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[9].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[9].skuCode}}_1.jpg">
+			    <div class="caption">show details</div>
+			    <div class="card-heading"><strong>coats</strong></div>
+			    <div class="card-content text-muted">coats</div>
+			     <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 520's people like</div>
+			  </a>
+			</div>
+			<div ng-hide='$ctrl.productLength < 2' class="col-md-4 col-sm-6 col-lg-3">
+				    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[10].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[10].skuCode}}_1.jpg">
+				      <div class="caption">show details</div>
+				      <div class="card-heading"><strong>jeans</strong></div>
+				      <div class="card-content text-muted">jeans</div>
+				       <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 633's people like</div>
+				    </a>
+				  </div>
+			<div ng-hide='$ctrl.productLength < 2'class="col-md-4 col-sm-6 col-lg-3">
+			    <a class="card" href="#" ng-click="$ctrl.viewDetails($ctrl.mp3Players[11].skuCode)">
+			      <img src="./images/{{$ctrl.mp3Players[11].skuCode}}_1.jpg">
+				    <div class="caption">show details</div>
+				    <div class="card-heading"><strong>dresses</strong></div>
+				    <div class="card-content text-muted">dresses</div>
+				     <div class="pull-right text-danger"><i class="icon-heart-empty"></i> 475's people like</div>
+				  </a>
+				</div>
+	</div>
+
+</div>
+
+<div>
+	<div class="banner" >
+		<div src="./images/clothing5.jpg">
+	</div>
+</div>
+
+</div>
+</div>

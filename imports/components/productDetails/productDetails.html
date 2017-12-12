@@ -1,0 +1,51 @@
+<style type="text/css">
+	.cloth_size{
+		width: 20%;
+		height: auto;
+	}
+	.table_color{
+		background-color: white;
+	}
+
+</style>
+<div>
+	<h2> Product Details</h2>
+	<p>
+	<!-- 	<h3 >{{$ctrl.currentViewMP3Player.brand + " " + $ctrl.currentViewMP3Player.model}}</h3> -->
+		<table border="1" width="100%" >
+			<tr>
+				<td colspan="2" >
+				 <img class="cloth_size" src="./images/{{$ctrl.currentViewMP3Player.skuCode}}_1.jpg" />
+				 <img class="cloth_size" src="./images/{{$ctrl.currentViewMP3Player.skuCode}}_2.jpg" /> 
+				 <img class="cloth_size" src="./images/{{$ctrl.currentViewMP3Player.skuCode}}_3.jpg" /></td>
+			</tr>
+			<tr class="table_color">
+				<th>Buy this Item Now!</th>
+				<td>
+					<input ng-model="$ctrl.shoppingCartQty" type="number" min="1" max="100000" value="{{$ctrl.shoppingCartQty}}" /> 
+					<a href="/shoppingCart"><button ng-click="$ctrl.addToCart()">Add to Cart</button></a>
+				</td>
+			</tr>
+			<tr class="table_color">
+				<th>Sku Code</th>
+				<td>{{$ctrl.currentViewMP3Player.skuCode}}</td>
+			</tr>
+			<tr class="table_color">
+				<th>Brand</th>
+				<td>{{$ctrl.currentViewMP3Player.brand}}</td>
+			</tr>
+			<tr class="table_color">
+				<th>Model</th>
+				<td>{{$ctrl.currentViewMP3Player.model}}</td>
+			</tr>
+			<tr class="table_color">
+				<th>Description</th>
+				<td>{{$ctrl.currentViewMP3Player.description}}</td>
+			</tr>
+			<tr class="table_color">
+				<th>Unit Price</th>
+				<td>{{$ctrl.currentViewMP3Player.unitPrice | currency}}</td>
+			</tr>
+		</table>
+	</p>
+</div>

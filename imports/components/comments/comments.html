@@ -1,0 +1,60 @@
+<div style="text-align: center;background-image:url('./images/board.jpg');background-repeat: no-repeat;background-size: 100%;">
+     
+     <table width="80%" height="50%" style="border:1px solid darkseagreen;position: absolute;top: 20%;left: 10%">
+  <tr align="left">
+    <td>Name:Song Fa BAK-KUT-TEH<td>
+  <td rowspan="5"><img src="images/MP1_1.png" height="300px" width="300px"></td>
+  </tr>
+  <tr align="left">
+    <td>Score:9.2</td>
+  </tr>
+  <tr align="left">
+    <td>Price:$11</td>
+  </tr>
+  <tr align="left">
+    <td>Address:Xinqiao Road, 11#01-01 65336128</td>
+  </tr>
+  <tr align="left">
+    <td>instructions:BAK-KUT-THE Deep-Fried Dough Sticks Braised pig(Trotter)</td>
+  </tr>
+</table>
+
+     <table width="80%" align="center">
+        <tr>
+            <td width="30%" align="right"><img src="images/logo.png"></td>
+            <td align="center"><input type="text" ng-model="$ctrl.search_info" style="width:400px;height:30px">&nbsp;<button ng-click="$ctrl.searchgo()" class="btn-info btn-lg"><span class="glyphicon glyphicon-search"> Search</button></span></td>
+    </table>
+    <table width="80%" style="color:white;font-family:Times New Roman;background:orange;" align="center">
+      <tr height="30px">
+      <td><font size="6">&nbsp;&nbsp;</font></td>
+      <td><font size="6"><a href="\home">Home</a></font></td>
+      <td><font size="6"><a href="\cityguide">City Guide</a></font></td>
+      <td><font size="6">Scenic Spot</font></td>
+      <td><font size="6"><a href="\food">Food</font></td>
+      <td><font size="6">Hotel</font></td>
+      <td><font size="6">Shopping</font></td>
+    </tr>
+   </table>
+    <br/><br/>
+    <div  style="position: absolute;top: 80%;left: 10%">
+    <br/>
+    <table ng-repeat="Comments in $ctrl.comments" width="60%" style="border:1px solid grey; text-align: left;margin-right: 10%">
+      <tr>
+      <td align="left">Comment:<br>{{Comments.com}}</td>
+      </tr>
+      <tr><td><br/><br/></td></tr>
+    </table>
+    <br><br>
+  <p align="left"><textarea rows="10" cols="60" ng-model="$ctrl.newComment.com">
+  Write your comments here.
+  </textarea> 
+  <br>
+    <button ng-click="$ctrl.upload()" ng-click="$ctrl.commentcall()">Make Comments</button></p>
+    </div>
+    <div style="position: absolute;top: 80%;left: 70%;">
+      <img src="images/comment1.jpg" style="width: 300px;">
+    </div>
+    <div style="position: absolute;top: 120%;left: 70%;">
+      <img src="images/comment2.jpg" style="width: 300px">     
+    </div>
+</div>

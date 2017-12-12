@@ -1,0 +1,30 @@
+<style type="text/css">
+	.center_div_customer{
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		width: 40%;
+		height: 40%;
+		float: right;
+		border: 0px;
+	}
+	
+</style>
+<div class="center_div_customer">
+<div>
+	<h2 style="text-align: center">New Customer Registration</h2>
+	<p>
+		First Name: <input class="form-control" type="text" ng-model="$ctrl.newCustomer.firstName" />
+		<br/>
+		Last Name: <input class="form-control" type="text" ng-model="$ctrl.newCustomer.lastName" />
+		<br/>
+		Email: <input class="form-control" type="text" ng-model="$ctrl.newCustomer.email" />
+		<br/>
+		Username: <input class="form-control" type="text" ng-model="$ctrl.newCustomer.username" />
+		<br/>
+		Password: <input class="form-control" type="password" ng-model="$ctrl.newCustomer.pwd" />
+		<br/><br/>
+		<button class="btn btn-default" ng-click="$ctrl.register()">Register</button>
+	</p>
+</div>
+</div>

@@ -1,0 +1,201 @@
+<div>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonblack {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height:80px;
+}
+
+.buttonblack:hover {
+    background-color: white;
+    color: black;
+}
+.buttonbule {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height:80px;
+}
+
+</style>
+  <table width="80%" align="center">
+	<tr>
+	  <td width="30%" align="right"><img src="images/logo.png"></td>
+	  <td align="center"><input type="text" ng-model="$ctrl.search_info" style="width:400px;height:30px">&nbsp;<button ng-click="$ctrl.searchgo()" class="btn-info btn-lg"><span class="glyphicon glyphicon-search"> Search</button></span></td>
+  </table>
+  <br>
+  <table width="80%" style="color:white;font-family:Times New Roman;background:orange;" align="center">
+    <tr height="30px">
+		  <td><font size="6">&nbsp;&nbsp;</font></td>
+		  <td><font size="6"><u>Home</u></font></td>
+		  <td><font size="6"><a href="\cityguide">City Guide</a></font></td>
+		  <td><font size="6"><a href="\notfinish">Scenic Spot</a></font></td>
+		  <td><font size="6"><a href="\food">Food</font></td>
+		  <td><font size="6"><a href="\notfinish">Hotel</font></a></td>
+		  <td><font size="6"><a href="\notfinish">Shopping</font></a></td>
+		</tr>
+	  </table>
+    <br>
+	  <table width="80%" align="center">
+    <tr>
+	  <td rowspan="2" width="15%"><font size="6" color="blue"><b>Singapore</b></font></td>
+	  <td>新加坡</td>
+	  <td>&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>The island country of malacca,knwon as 'Garden City','Lion City'.</td>
+	  <td>&nbsp;</td>
+	</tr>
+  </table>
+  <br>
+  <table width="80%" align="center">
+    <tr>
+	  <td rowspan="4" width="80%"><img src="images/homepicture{{$ctrl.num}}.png" width="100%"></td>
+	  <td><button class="button buttonblack" ng-click="$ctrl.num1()">Bak-Kut-Teh</button></td>
+	</tr>
+	<tr>
+	  <td><button class="button buttonblack" ng-click="$ctrl.num2()">Clarke Quay </button></td>
+	</tr>
+	<tr>
+	  <td><button class="button buttonblack" ng-click="$ctrl.num3()">Chinatown</button></td>
+	</tr>
+	<tr>
+	  <td><button class="button buttonblack" ng-click="$ctrl.num4()">Sentosa</button></td>
+	</tr>
+  </table>
+  <table style="margin-left: 10%" width="60%">
+    <tr>
+      <td rowspan="2"><span class="glyphicon glyphicon-map-marker"></span><font size="5" color="blue"><b>Eating in<br> Singapore</b></font></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="color: #585858"><font size="4">There are lots of Indian and Malay food,and don't miss spciy crabs and bak kut teh!</font></td>
+    </tr>
+  </table>
+  <table style="margin-left: 10%" width="60%">
+    <tr>
+      <td><font size="4">Popular delicious food in Singapore</font></td>
+    </tr>
+    <br>
+    <tr>
+      <td rowspan="2"><img src="images/crabs.png"></td>
+      <td width="30%" align="center"><img src="images/chicken.png"></td>
+      <td width="30%" align="center"><img src="images/liulian.png"></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/tea.png"></td>
+      <td align="center"><img src="images/niangre.png"></td>
+    </tr>
+    <tr>
+      <td><font size="4"><br>Popular restaurant in Singapore</font></td>
+    </tr>
+      <td><img src="images/zhenbaohaixian.png"></td>
+      <td><img src="images/songfarougucha.png"></td>
+      <td><img src="images/linzhiyuan.png"></td>
+    </tr>
+    <tr>
+      <td align="center">JUMB SEA FOOD<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+      <td align="center">Song Fa<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+      <td align="center">LIM CHEE GUAN<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+    </tr>
+  </table>
+  <br>
+  <table style="margin-left: 10%" width="60%">
+    <tr>
+      <td rowspan="2" width="20%"><span class="glyphicon glyphicon-map-marker"></span><font size="5" color="blue"><b>Playing in Singapore</b></font></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="color: #585858"><font size="4">Playing in park with your family;Walking at beach with lover;Experiencing night at blocks!</font></td>
+    </tr>
+  </table>
+  <table style="margin-left: 10%" width="60%">
+    <tr>
+      <td align="center"><img src="images/shengtaosha.png"></td>
+      <td align="center"><img src="images/yuweishi.png"></td>
+    </tr>
+    <tr>
+      <td align="center">SENTOSA<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+      <td align="center">Merlion Park<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/dongwuyuan.png"></td>
+      <td align="center"><img src="images/motianlun.png"></td>
+    </tr>
+    <tr>
+      <td align="center"> Singapore Night Safari<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+      <td align="center">Singapore Ferris Wheel<br>score:<font color="red"><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart"></span></font><br>Make Comment</td>
+    </tr>
+  </table>
+  <br><br><br><br><br><br>
+  <table width="80%" align="center" style="background:#B0B0B0 ">
+    <tr>
+      <td>Hot place:</td>
+      <td>Hong Kong</td>
+      <td>Bangkok</td>
+      <td>Seoul</td>
+      <td>Tokyo</td>
+      <td>Paris</td>
+      <td>ShangHai</td>
+      <td>Taipei</td>
+      <td>Island of phuket</td>
+      <td>New York</td>
+      <td>Kuala Lumpur</td>
+    </tr>
+  </table>
+  <div style="position:absolute;left:73%;top:104%">
+  <img src="images/map.png">
+  <br>
+  <p align="center"><button>view online</button></p>
+  </div>
+  <div style="position:absolute;left:74%;top:140%;background-color:#FFCC66">
+  Hotel Booking<br><br>
+  day:&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="day"><br>
+  month:<input type="number" name="month"><br>
+  year:&nbsp;&nbsp;&nbsp;<input type="number" name="year"><br>
+  Location:&nbsp;&nbsp;<button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+      data-toggle="dropdown">
+    Please choose...
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation" >
+      <a role="menuitem" tabindex="-1" href="#">Chinatown</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Sentosa</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Merlion Park</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Singapore Changi Airport</a>
+    </li>
+     <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Other...</a>
+    </li>
+  </ul>
+  <br><br>
+  <p align="center"><button>search</button></p>
+  </div>
+  <br><br><br><br>
+  <p align="center">©2017-2017 dianping.com, All Rights Reserved.  本站发布的所有内容，未经许可，不得转载.</p>
+
+
+</div>
